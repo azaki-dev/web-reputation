@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="index.css"/>
+      <title>Web Rep</title>
+  </head>
+
+  <body>
+      <header>
+        <div>
+          <p>Web Rep<p>
+        </div>
+      </header>
+      <div class="menu">
+        <input id="ipbox" type="text" placeholder="IP: 192.168.0.1" autocomplete="on"/>
+        <button id="search">Search</button>
+        <button id="export">Export</button>
+        <button id="trash">Clean</button>
+        <input id="upload" type="file" accept=".csv"></input>
+        <label id="load" for="upload">Import</label>
+    </div> 
+    <section>
+      <div class="left-bar">
+        <span>APIS<button id="gear">⚙️</button></span>
+        <div class="api">
+          <input type="checkbox" id="cvt" name="virus-total" checked>
+          <label for="virus-total">Virus Total</label>
+          <br>
+          <input type="checkbox" id="cai" name="abuse-ip" checked>
+          <label for="abuse-ip">Abuse IP</label>
+          <br>
+          <input type="checkbox" id="cibm" name="ibm-xforce" checked>
+          <label for="ibm-xforce">IBM XForce</label>
+          <br>
+          <input type="checkbox" id="cav" name="alien-vault" checked>
+          <label for="alien-vault">Alien Vault</label>
+        </div>
+      </div>
+
+      <div class="render-content">
+        <center>
+          <table>
+            <thead>
+              <tr>
+                <th>IP Address</th>
+                <th>Virus Total</th>
+                <th>Abuse IP</th>
+                <th>IBM XForce</th>
+                <th>Alien Vault</th>
+              </tr>
+            </thead>
+            <tbody id="render">
+              <!--<tr>
+                <td>45.190.156.71</td>
+                <td>4/90</td>
+                <td>100%</td>
+                <td>10</td>
+                <td>10</td>
+              </tr>-->
+            </tbody>
+          </table>
+        </center>
+      </div>
+    </section>
+    <div class="modal">
+      <div class="config">
+        <h3 class="cf-title">API Settings:</h3>
+        Virus Total:<input type="text" id="inp-virus" placeholder="key">
+        <button onclick="window.open('https://www.virustotal.com/gui/join-us','_blank');">Obter</button>
+        <br>
+        Abuse IP: <input type="text" id="inp-abuse" placeholder="key">
+        <button onclick="window.open('https://www.abuseipdb.com/register?plan=free','_blank');">Obter</button>
+        <br>
+        IBM Exchange: <input type="text" id="inp-ibm1" placeholder="key">
+        <input type="text" id="inp-ibm2" placeholder="pass">
+        <button onclick="window.open('https://www.ibm.com/account/reg/br-pt/signup?formid=urx-30243','_blank');">Obter</button>
+        <br>
+        <div>
+          <button id="change">Save</button>
+          <button id="cls-modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="library/jquery-3.6.0.min.js"></script>
+    <script src="library/jquery-csv.js"></script>
+  </body>
+</html>

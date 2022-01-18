@@ -1,0 +1,16 @@
+{
+  "name": "web-rep",
+  "version": "0.0.1",
+  "description": "Simple client for IP reputation APIs",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ../web-rep --platform-win32"
+  },
+  "author": "Emerson Araujo",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.1",
+    "electron-packager": "^15.4.0"
+  }
+}

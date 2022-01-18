@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import url(fonts.css);
+
+body, button, input {
+  font-family: 'Mohave';
+}
+
+body{
+  margin: 0;
+  color: white;
+}
+
+header{
+  background-color: #222433;
+  height: 3em;
+  border-bottom: 1px solid #313741;
+}
+
+header > div > p{
+  margin: 0px;
+  padding-top: 8px;
+  padding-left: 10px;
+  font-size: 24px;
+  width: 20vh;
+  background-color: #313747;
+}
+
+.menu{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #313747;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu > input{
+  border: none;
+  background-color: #3d4353;
+  border-radius: 2px;
+  color: white;
+}
+.menu > input:hover{
+  outline: none !important;
+  background-color: #2a4678;
+}
+
+section{
+  display: flex;
+  background-color: #27293a;
+}
+.left-bar{
+  background-color: #27293a;
+  width: 25%;
+  height: 82vh;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+.render-content{
+  width: 100%;
+  background-color: #1c1e2e;
+}
+
+button {
+  margin: 0;
+  background-color: #d9d7e0;
+  border: 0;
+  width: 55px;
+  height: 18px;
+  margin-left: 3px; 
+  color: #273e64;
+  cursor: pointer;
+}
+
+input[type='file'] {
+  display: none
+}
+
+/*display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 15px;*/
+.modal{
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.config{
+  width: 400px;
+  height: 400px;
+  background-color: #3e4652;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cf-title{
+  border-bottom: 1px solid #313741;
+}
+#change{
+  background-color: #37553e;
+  color: white;
+}
+#cls-modal{
+  background-color: #e75225;
+  color: white;
+}
+#gear {
+  all: unset;
+  cursor: pointer;
+  margin-left: 3px;
+}
+#load {
+  margin-left: 5px;
+}
+
+table {
+  margin-top: 5px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+}
+thead th {
+  background-color: #282a36;
+  border: solid 1px #3e4652;
+  padding: 10px;
+  text-align: left;
+}
+tbody td {
+  border: solid 1px #3e4652;
+  padding: 10px;
+}
+
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #282a36; }
+::-webkit-scrollbar-track {  background-color: #282a36;}
+::-webkit-scrollbar-track-piece { background-color: #2a4678;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #282a36; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #282a36;}
+::-webkit-resizer { background-color: #282a36;}
